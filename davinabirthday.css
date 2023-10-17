@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Young Serif", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  filter: brightness(40%);
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.showing {
+  opacity: 1;
+  z-index: -1;
+  transition: none;
+}
+
+.fadeIn {
+  opacity: 1 !important;
+}
+
+.happy,
+.tanggal {
+  margin: 30px 0;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.loveletter {
+  font-family: "Young Serif", cursive;
+  position: relative;
+  top: 50px;
+  font-size: 12px;
+}
+
+.tanggal {
+  font-size: 11px;
+}
+
+.davina {
+  font-family: "Great Vibes", cursive;
+  font-size: 165px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fa-envelope {
+  font-size: 33px;
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-heart {
+  position: absolute;
+  top: 13px;
+  left: 9.5px;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.b-envelope,
+.loveletter {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.b-envelope:hover .fa-heart {
+  transform: scale(1.35);
+  top: 11px;
+}
+
+.b-envelope {
+  background-color: transparent;
+  border: 0;
+  margin-top: 20px;
+  position: relative;
+  top: 40px;
+  transition: 0.5s;
+}
+
+.b-envelope:hover {
+  transform: scale(1.2);
+}
+
+.hbd-gif {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.albumofdavina {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #100f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuteness-title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.album-mini-title {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 7px;
+  font-family: "young serif", sans-serif;
+}
+
+.carousel {
+  width: 400px;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.carousel-inner img {
+  height: 400px;
+}
+
+.carousel-caption {
+  padding-bottom: 0px !important;
+  margin-bottom: -10px !important;
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+}
+
+.linethrough {
+  text-decoration-line: line-through;
+  color: rgba(163, 163, 163, 0.993);
+  font-size: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #100f0f;
+}
+
+.footertitle {
+  font-size: 30px;
+  width: 75%;
+}
+
+footer h1 {
+  margin-bottom: 0;
+  line-height: normal;
+  position: relative;
+  top: 100px;
+  font-size: 30px;
+}
